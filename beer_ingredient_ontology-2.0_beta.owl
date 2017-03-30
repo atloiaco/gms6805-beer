@@ -1,0 +1,114 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://purl.obolibrary.org/obo/GMS6805-beer/"
+     xml:base="http://purl.obolibrary.org/obo/GMS6805-beer/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
+     xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:ncbitaxon="http://purl.obolibrary.org/obo/ncbitaxon#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:pato="http://purl.obolibrary.org/obo/pato#"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/GMS6805-beer/">
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/GMS6805-beer/1.0beta"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/iao/2015-02-23/ontology-metadata.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/pato/releases/2017-03-22/pato.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/ro/releases/2017-03-23/ro.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/ncbitaxon/2016-08-15/ncbitaxon.owl"/>
+        <owl:versionInfo>2017-03-21</owl:versionInfo>
+        <rdfs:comment xml:lang="en">The Beer Ingredient Ontology (BIO) is a guide to specific ingredients used in the brewing of beer, with an initial focus on yeasts, grains, and hops.</rdfs:comment>
+        <dc:contributor>Erik Schmidt</dc:contributor>
+        <dc:contributor>Steven Smith</dc:contributor>
+        <dc:contributor>Alex Loiacono</dc:contributor>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_3486 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_3486">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000053"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PATO_0002474"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <obo:IAO_0000117>Alex Loiacono</obo:IAO_0000117>
+        <obo:IAO_0000118>common hop</obo:IAO_0000118>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0002474 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PATO_0002474">
+        <obo:IAO_0000117>Alex Loiacono</obo:IAO_0000117>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GMS6805-beer/beer_00001000 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GMS6805-beer/beer_00001000">
+        <obo:IAO_0000115 xml:lang="en">A leavening agent containing yeast cells which is offered for sale and used to raise the dough in making bread, for fermenting beer, or for making whiskey.</obo:IAO_0000115>
+        <obo:IAO_0000117>Erik Schmidt</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">WordNet 3.1</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">commercial yeast strain</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GMS6805-beer/beer_00001001 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GMS6805-beer/beer_00001001">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GMS6805-beer/beer_00001000"/>
+        <obo:IAO_0000115 xml:lang="en">Liquid yeast used for producing beer with clean, crisp flavor characteristics with low fruitness and mild ester production.</obo:IAO_0000115>
+        <obo:IAO_0000117>Erik Schmidt</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">wyeastlab.com</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">wyeast American ale 1056</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GMS6805-beer/beer_00002001 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GMS6805-beer/beer_00002001">
+        <obo:IAO_0000115>The primary source of beer color and a major contributor to beer flavor, aroma, and body. Proteins in the grains give structure to beer foam and minerals deliver many of the nutrients essential to yeast growth.</obo:IAO_0000115>
+        <obo:IAO_0000117>Alex Loiacono</obo:IAO_0000117>
+        <obo:IAO_0000119>http://www.aperfectpint.net/Brewing%20Grains.pdf</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">brewing grains</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GMS6805-beer/beer_00002002 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GMS6805-beer/beer_00002002">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GMS6805-beer/beer_00002001"/>
+        <obo:IAO_0000115>A cereal grain that is kiln-dried after having been germinated by soaking in water.</obo:IAO_0000115>
+        <obo:IAO_0000117>Alex Loiacono</obo:IAO_0000117>
+        <obo:IAO_0000119>https://vdict.com/malt,7,0,0.html</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">malt</rdfs:label>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.5.20160517-0735) https://github.com/owlcs/owlapi -->
+
